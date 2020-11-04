@@ -2,24 +2,98 @@
     ViewBag.Title = "Home Page";
 }
 
-<h2>@ViewBag.Title.</h2>
+<link href="~/Content/Home/Homepage.css" rel="stylesheet" />
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Put stuff here
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+<div class="container-fluid">
+    <h2>@ViewBag.Title.</h2>
+
+    @*@Html.ActionLink("Programming", "Programming", "BigIdeas")*@
+
+    <div class="row">
+        <a class="flip-card col-md-3" href="#">
+            <div class="flip-card-inner">
+                <div class="flip-card-front center">
+                    <p class="h2">Welcome to BJC!</p>
+                </div>
+                <div class="flip-card-back center">
+                    <p>Programming is fun kids give it a shot</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="flip-card col-md-3" href="#">
+            <div class="flip-card-inner">
+                <div class="flip-card-front center">
+                    <p class="h2">CREATIVITY</p>
+                </div>
+                <div class="flip-card-back center">
+                    <p>Programming is fun kids give it a shot</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="flip-card col-md-3" href="#">
+            <div class="flip-card-inner">
+                <div class="flip-card-front center">
+                    <p class="h2">ABSTRACTION</p>
+                </div>
+                <div class="flip-card-back center">
+                    <p>Programming is fun kids give it a shot</p>
+                </div>
+            </div>
+        </a>
+        <a class="flip-card col-md-3" href="#">
+            <div class="flip-card-inner">
+                <div class="flip-card-front center">
+                    <p class="h2">DATA</p>
+                </div>
+                <div class="flip-card-back center">
+                    <p>Programming is fun kids give it a shot</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="flip-card col-md-3" href="#">
+            <div class="flip-card-inner">
+                <div class="flip-card-front center">
+                    <p class="h2">ALGORITHMS</p>
+                </div>
+                <div class="flip-card-back center">
+                    <p>Programming is fun kids give it a shot</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="flip-card col-md-3" href="@Url.Action("Programming", "BigIdeas")">
+            <div class="flip-card-inner">
+                <div class="flip-card-front center">
+                    <p class="h2">PROGRAMMING</p>
+                </div>
+                <div class="flip-card-back center">
+                    <p>Programming is fun kids give it a shot</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="flip-card col-md-3" href="#">
+            <div class="flip-card-inner">
+                <div class="flip-card-front center">
+                    <p class="h2">INTERNET</p>
+                </div>
+                <div class="flip-card-back center">
+                    <p>Programming is fun kids give it a shot</p>
+                </div>
+            </div>
+        </a>
+        <a class="flip-card col-md-3" href="#">
+            <div class="flip-card-inner">
+                <div class="flip-card-front center">
+                    <p class="h2">IMPACT</p>
+                </div>
+                <div class="flip-card-back center">
+                    <p>Programming is fun kids give it a shot</p>
+                </div>
+            </div>
+        </a>
     </div>
 </div>
