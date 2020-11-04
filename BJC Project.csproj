@@ -133,7 +133,10 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Home\anon.png" />
+    <Content Include="Content\Home\Blue Background.bmp" />
     <Content Include="Content\Home\Homepage.css" />
+    <Content Include="Content\Home\logo.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />

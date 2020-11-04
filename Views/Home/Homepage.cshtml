@@ -3,19 +3,27 @@
 }
 
 <link href="~/Content/Home/Homepage.css" rel="stylesheet" />
+@*<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+
+        <img src="~/Content/Home/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        The Beauty and Joy of Computing
+    </a>
+</nav>*@
 
 <div class="container-fluid">
-    <h2>@ViewBag.Title.</h2>
+
+
 
     @*@Html.ActionLink("Programming", "Programming", "BigIdeas")*@
 
     <div class="row">
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
-                <div class="flip-card-front center">
+                <div class="flip-card-front cardstyles">
                     <p class="h2">Welcome to BJC!</p>
                 </div>
-                <div class="flip-card-back center">
+                <div class="flip-card-back cardstyles">
                     <p>Programming is fun kids give it a shot</p>
                 </div>
             </div>
@@ -23,10 +31,10 @@
 
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
-                <div class="flip-card-front center">
+                <div class="flip-card-front cardstyles">
                     <p class="h2">CREATIVITY</p>
                 </div>
-                <div class="flip-card-back center">
+                <div class="flip-card-back cardstyles">
                     <p>Programming is fun kids give it a shot</p>
                 </div>
             </div>
@@ -34,20 +42,20 @@
 
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
-                <div class="flip-card-front center">
+                <div class="flip-card-front cardstyles">
                     <p class="h2">ABSTRACTION</p>
                 </div>
-                <div class="flip-card-back center">
+                <div class="flip-card-back cardstyles">
                     <p>Programming is fun kids give it a shot</p>
                 </div>
             </div>
         </a>
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
-                <div class="flip-card-front center">
+                <div class="flip-card-front cardstyles">
                     <p class="h2">DATA</p>
                 </div>
-                <div class="flip-card-back center">
+                <div class="flip-card-back cardstyles">
                     <p>Programming is fun kids give it a shot</p>
                 </div>
             </div>
@@ -55,10 +63,10 @@
 
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
-                <div class="flip-card-front center">
+                <div class="flip-card-front cardstyles">
                     <p class="h2">ALGORITHMS</p>
                 </div>
-                <div class="flip-card-back center">
+                <div class="flip-card-back cardstyles">
                     <p>Programming is fun kids give it a shot</p>
                 </div>
             </div>
@@ -66,10 +74,10 @@
 
         <a class="flip-card col-md-3" href="@Url.Action("Programming", "BigIdeas")">
             <div class="flip-card-inner">
-                <div class="flip-card-front center">
+                <div class="flip-card-front cardstyles">
                     <p class="h2">PROGRAMMING</p>
                 </div>
-                <div class="flip-card-back center">
+                <div class="flip-card-back cardstyles">
                     <p>Programming is fun kids give it a shot</p>
                 </div>
             </div>
@@ -77,20 +85,20 @@
 
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
-                <div class="flip-card-front center">
+                <div class="flip-card-front cardstyles">
                     <p class="h2">INTERNET</p>
                 </div>
-                <div class="flip-card-back center">
+                <div class="flip-card-back cardstyles">
                     <p>Programming is fun kids give it a shot</p>
                 </div>
             </div>
         </a>
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
-                <div class="flip-card-front center">
+                <div class="flip-card-front cardstyles">
                     <p class="h2">IMPACT</p>
                 </div>
-                <div class="flip-card-back center">
+                <div class="flip-card-back cardstyles">
                     <p>Programming is fun kids give it a shot</p>
                 </div>
             </div>
