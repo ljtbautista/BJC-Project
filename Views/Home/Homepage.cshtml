@@ -3,28 +3,17 @@
 }
 
 <link href="~/Content/Home/Homepage.css" rel="stylesheet" />
-@*<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-
-        <img src="~/Content/Home/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-        The Beauty and Joy of Computing
-    </a>
-</nav>*@
 
 <div class="container-fluid">
-
-
-
-    @*@Html.ActionLink("Programming", "Programming", "BigIdeas")*@
-
     <div class="row">
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
                 <div class="flip-card-front cardstyles">
-                    <p class="h2">Welcome to BJC!</p>
+                    <p class="h2">Welcome<br />to BJC!</p>
                 </div>
                 <div class="flip-card-back cardstyles">
-                    <p>Programming is fun kids give it a shot</p>
+                    <p>Click any topic to find courses and resources to help you learn 
+                    more about the beauty and joy of computing</p>
                 </div>
             </div>
         </a>
@@ -32,10 +21,10 @@
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
                 <div class="flip-card-front cardstyles">
-                    <p class="h2">CREATIVITY</p>
+                    <p class="h2"><i class="fa fa-paint-brush"></i><br />CREATIVITY</p>
                 </div>
                 <div class="flip-card-back cardstyles">
-                    <p>Programming is fun kids give it a shot</p>
+                    <p>Computing is a creative activity that promotes innovation and exploration.</p>
                 </div>
             </div>
         </a>
@@ -43,20 +32,11 @@
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
                 <div class="flip-card-front cardstyles">
-                    <p class="h2">ABSTRACTION</p>
+                    <p class="h2"><i class="fa fa-cube"></i><br />ABSTRACTION</p>
                 </div>
                 <div class="flip-card-back cardstyles">
-                    <p>Programming is fun kids give it a shot</p>
-                </div>
-            </div>
-        </a>
-        <a class="flip-card col-md-3" href="#">
-            <div class="flip-card-inner">
-                <div class="flip-card-front cardstyles">
-                    <p class="h2">DATA</p>
-                </div>
-                <div class="flip-card-back cardstyles">
-                    <p>Programming is fun kids give it a shot</p>
+                    <p>A central problem solving technique that reduces information and details to focus on concepts 
+                    relevant to understanding the problem.</p>
                 </div>
             </div>
         </a>
@@ -64,10 +44,21 @@
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
                 <div class="flip-card-front cardstyles">
-                    <p class="h2">ALGORITHMS</p>
+                    <p class="h2"><i class="fa fa-database"></i><br />DATA</p>
                 </div>
                 <div class="flip-card-back cardstyles">
-                    <p>Programming is fun kids give it a shot</p>
+                    <p>Information that facilitates knowledge about the world.</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="flip-card col-md-3" href="#">
+            <div class="flip-card-inner">
+                <div class="flip-card-front cardstyles">
+                    <p class="h2"><i class="fa fa-calculator"></i><br />ALGORITHMS</p>
+                </div>
+                <div class="flip-card-back cardstyles">
+                    <p>Tools for expressing solutions to computational problems.</p>
                 </div>
             </div>
         </a>
@@ -75,10 +66,10 @@
         <a class="flip-card col-md-3" href="@Url.Action("Programming", "BigIdeas")">
             <div class="flip-card-inner">
                 <div class="flip-card-front cardstyles">
-                    <p class="h2">PROGRAMMING</p>
+                    <p class="h2"><i class="fa fa-code"></i><br />PROGRAMMING</p>
                 </div>
                 <div class="flip-card-back cardstyles">
-                    <p>Programming is fun kids give it a shot</p>
+                    <p>Creative process that produces computational artifacts.</p>
                 </div>
             </div>
         </a>
@@ -86,20 +77,24 @@
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
                 <div class="flip-card-front cardstyles">
-                    <p class="h2">INTERNET</p>
+                    <p class="h2"><i class="fa fa-wifi"></i><br />INTERNET</p>
                 </div>
                 <div class="flip-card-back cardstyles">
-                    <p>Programming is fun kids give it a shot</p>
+                    <p>Digital devices, systems and networks that interconnect to enable 
+                    computational problem solving.</p>
                 </div>
             </div>
         </a>
+
         <a class="flip-card col-md-3" href="#">
             <div class="flip-card-inner">
                 <div class="flip-card-front cardstyles">
-                    <p class="h2">IMPACT</p>
+                    <p class="h2"><i class="fa fa-globe"></i><br />IMPACT</p>
                 </div>
                 <div class="flip-card-back cardstyles">
-                    <p>Programming is fun kids give it a shot</p>
+                    <p>Computation has had a profound impact on the way people live, work, 
+                    play and think. Computing has enabled major innovations in other fields 
+                    including medicine, engineering, science and even the arts.</p>
                 </div>
             </div>
         </a>
