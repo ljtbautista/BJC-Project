@@ -14,7 +14,14 @@ namespace BJC_Project.Controllers
             return View();
         }
 
+        //Course
         public ActionResult Javascript()
+        {
+            return View();
+        }
+
+        //Lesson
+        public ActionResult JavascriptTest()
         {
             return View();
         }

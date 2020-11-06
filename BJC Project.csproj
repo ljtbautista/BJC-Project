@@ -127,10 +127,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\BigIdeas\Programming\Cplusplus.png" />
     <Content Include="Content\BigIdeas\Programming\csharp.jpg" />
+    <Content Include="Content\BigIdeas\Programming\CSS.png" />
+    <Content Include="Content\BigIdeas\Programming\Foundation of programming.png" />
     <Content Include="Content\BigIdeas\Programming\hmtl.png" />
+    <Content Include="Content\BigIdeas\Programming\HTML.png" />
+    <Content Include="Content\BigIdeas\Programming\Javascript Test.png" />
     <Content Include="Content\BigIdeas\Programming\javascript.jpg" />
+    <Content Include="Content\BigIdeas\Programming\Jquery.png" />
+    <Content Include="Content\BigIdeas\Programming\lightbulb.jpg" />
+    <Content Include="Content\BigIdeas\Programming\OOP.jpg" />
     <Content Include="Content\BigIdeas\Programming\python.png" />
+    <Content Include="Content\BigIdeas\Programming\programming.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -275,6 +284,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\BigIdeas\Programming.cshtml" />
     <Content Include="Views\BigIdeas\Javascript.cshtml" />
+    <Content Include="Views\BigIdeas\JavascriptTest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
