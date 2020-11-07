@@ -135,6 +135,7 @@
     <Content Include="Content\BigIdeas\Programming\HTML.png" />
     <Content Include="Content\BigIdeas\Programming\Javascript Test.png" />
     <Content Include="Content\BigIdeas\Programming\javascript.jpg" />
+    <Content Include="Content\BigIdeas\Programming\JavascriptCourse\stars.png" />
     <Content Include="Content\BigIdeas\Programming\Jquery.png" />
     <Content Include="Content\BigIdeas\Programming\lightbulb.jpg" />
     <Content Include="Content\BigIdeas\Programming\OOP.jpg" />

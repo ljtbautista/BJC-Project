@@ -1,6 +1,135 @@
 ﻿@{
     ViewBag.Title = "Javascript";
 }
-<h2>@ViewBag.Title.</h2>
 
-<p>Use this area to provide additional information.</p>
+<head>
+    <style>
+        body {
+            background-image: url('../../Content/Home/blue tech background.png');
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        #coursePic {
+            width: 400px;
+        }
+
+        .centerContent {
+            display: flex;
+            justify-content: center;
+        }
+
+        #stars {
+            width: 130px;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .btn-dark {
+            background-color: #0C2340;
+            border-color: #0C2340;
+        }
+
+        ul.progressBar {
+            list-style: none;
+            position: relative;
+            height: 500px;
+            float: left;
+        }
+
+        .progressBar li:first-child {
+            border-radius: 5px 5px 0 0;
+        }
+
+        .progressBar li {
+            width: 6px;
+            background: #0C2340;
+            height: 12.5%;
+        }
+
+        .progressBar li::after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: #0C2340;
+            border-radius: 50%;
+            position: relative;
+            left: -5px;
+            top: calc(100% - 5px);
+        }
+
+        .progressBar li.active ~ li, .progressBar li.active ~ li::after {
+            background: #c5c5c5;
+        }
+
+        ul.progressText {
+            list-style: none;
+            height: 500px;
+            margin-left: 30px;
+            position: absolute;
+            top: 73px;
+        }
+
+        ul.progressText li {
+            height: 12.5%;
+            color: #0C2340;
+        }
+
+        .progressText li.active ~ li, .progressText li.active ~ li::after {
+            color: #c5c5c5;
+        }
+    </style>
+</head>
+
+<div class="container body-content">
+    <div class="row">
+        <div class="col-md-5 centerContent">
+            <img id="coursePic" src="~/Content/BigIdeas/Programming/javascript.jpg" />
+        </div>
+        <div class="col-md-7">
+            <h1>Javascript - 50% Completed</h1>
+            <h2 class="h3">5 hours - 6 lessons</h2>
+            <img id="stars" src="~/Content/BigIdeas/Programming/JavascriptCourse/stars.png" />
+            <p>
+                Javascript is a fun tool. If you want to hate yourself but love the result, take this beginner course!
+                Javascript is a fun tool. If you want to hate yourself but love the result, take this beginner course!
+            </p>
+            <button type="button" class="btn btn-dark">Continue <i class="fa fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <div class="row" style="padding: 10px 200px 0 200px">
+        <div class="col-md-12">
+            <a data-toggle="collapse" href="#collapseOverview" role="button" aria-expanded="false" aria-controls="collapseOverview">
+                Overview
+            </a>
+            <div class="collapse" id="collapseOverview">
+                <div class="card card-body">
+                    <ul class="progressBar">
+                        <li></li>
+                        <li></li>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                    <ul class="progressText">
+                        <li>Lesson 1</li>
+                        <li>Lesson 2</li>
+                        <li class="active">Lesson 3</li>
+                        <li>Lesson 4</li>
+                        <li>Lesson 5</li>
+                        <li>Lesson 6</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
