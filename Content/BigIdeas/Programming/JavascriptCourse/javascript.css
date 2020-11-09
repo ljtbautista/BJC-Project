@@ -1,0 +1,106 @@
+﻿body {
+    background-image: url('../../../Home/blue tech background.png');
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 1000px;
+}
+
+#coursePic {
+    width: 370px;
+}
+
+.centerContent {
+    display: flex;
+    justify-content: center;
+}
+
+#stars {
+    width: 130px;
+}
+
+.card {
+    border: none;
+}
+
+.btn-dark {
+    background-color: #0C2340;
+    border-color: #0C2340;
+}
+
+#overview {
+    padding-left: 15px;
+}
+
+/*overview progress bar css*/
+ul.progressBar {
+    list-style: none;
+    position: relative;
+    height: 500px;
+    float: left;
+}
+
+.progressBar li:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.progressBar li {
+    width: 6px;
+    background: #0C2340;
+    height: 12.5%;
+}
+
+.progressBar li::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #0C2340;
+    border-radius: 50%;
+    position: relative;
+    left: -5px;
+    top: calc(100% - 5px);
+}
+
+.progressBar li.active ~ li, .progressBar li.active ~ li::after {
+    background: #c5c5c5;
+}
+
+ul.progressText {
+    list-style: none;
+    height: 500px;
+    margin-left: 30px;
+    position: absolute;
+    top: 73px;
+}
+
+ul.progressText li {
+    height: 12.5%;
+    color: #0C2340;
+}
+
+.progressText li.active ~ li, .progressText li.active ~ li::after {
+    color: #c5c5c5;
+}
+
+/*css animation for overview caret*/
+.caret {
+    transition: all 0.4s ease;
+}
+
+.caret.rotation {
+    transform: rotate(180deg);
+}
+
+/*styling for links*/
+a {
+    text-decoration: none;
+    color: #0C2340;
+}
+
+a:hover {
+    color: #0C2340;
+}
