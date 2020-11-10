@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Interactive Game";
+}
+
+<head>
+    <style>
+        body {
+            background-image: url('../../Content/Home/blue tech background.png');
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 40px;
+            max-width: 1000px;
+            padding-bottom: 25px;
+        }
+
+        #codeAnimation {
+            background-color: lightblue;
+            height: 450px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #cloud {
+            width: 200px;
+            transition: all 0.4s ease;
+        }
+
+        #cloud:hover {
+            transform: scale(1.5);
+        }
+
+        #editor {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 15px;
+        }
+    </style>
+</head>
+
+<div class="container body-content">
+    <div class="row">
+        <div class="col-md-12"><h3>CSS Animations</h3></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            @*Text editor*@
+            <div id="editor">
+            .hello {
+                display: none;
+                }
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="codeAnimation">
+                <img id="cloud" src="~/Content/BigIdeas/Programming/InteractiveGame/cloud and buns.png" />
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/tomorrow_night");
+    editor.session.setMode("ace/mode/css");
+</script>

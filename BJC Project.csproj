@@ -133,6 +133,7 @@
     <Content Include="Content\BigIdeas\Programming\Foundation of programming.png" />
     <Content Include="Content\BigIdeas\Programming\hmtl.png" />
     <Content Include="Content\BigIdeas\Programming\HTML.png" />
+    <Content Include="Content\BigIdeas\Programming\InteractiveGame\cloud and buns.png" />
     <Content Include="Content\BigIdeas\Programming\Javascript Test.png" />
     <Content Include="Content\BigIdeas\Programming\javascript.jpg" />
     <Content Include="Content\BigIdeas\Programming\JavascriptCourse\javascript.css" />
@@ -287,6 +288,7 @@
     <Content Include="Views\BigIdeas\Programming.cshtml" />
     <Content Include="Views\BigIdeas\Javascript.cshtml" />
     <Content Include="Views\BigIdeas\JavascriptTest.cshtml" />
+    <Content Include="Views\BigIdeas\InteractiveGame.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -25,5 +25,11 @@ namespace BJC_Project.Controllers
         {
             return View();
         }
+
+        //Interactive Game
+        public ActionResult InteractiveGame()
+        {
+            return View();
+        }
     }
 }
