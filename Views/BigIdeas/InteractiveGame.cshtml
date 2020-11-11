@@ -24,14 +24,20 @@
             align-items: center;
         }
 
-        #cloud {
+        .cloud {
             width: 200px;
             transition: all 0.4s ease;
         }
+        
+        /*scale for level 1*/
+        #cloud1.hover {
+            transform: scale(1.5);
+        }
 
-            #cloud.hover {
-                transform: scale(1.5);
-            }
+        /*rotate for level 2*/
+        #cloud2.rotate {
+            transform: rotate(90deg);
+        }
 
         #editor {
             position: absolute;
@@ -44,6 +50,10 @@
         .alert {
             margin-bottom: 0;
             padding: 0.375rem 0.75rem;
+        }
+
+        #done {
+            padding: 0.375rem 0.6rem;
         }
     </style>
 </head>
@@ -72,7 +82,8 @@ of 1.5 when hovered*/
         </div>
         <div class="col-md-6">
             <div id="codeAnimation">
-                <img id="cloud" src="~/Content/BigIdeas/Programming/InteractiveGame/cloud and buns.png" />
+                <img id="cloud1" class="cloud" src="~/Content/BigIdeas/Programming/InteractiveGame/cloud and buns.png" />
+                <img id="cloud2" class="cloud" style="display:none" src="~/Content/BigIdeas/Programming/InteractiveGame/cloud and buns.png" />
             </div>
         </div>
     </div>
@@ -88,6 +99,7 @@ of 1.5 when hovered*/
         </div>
         <div class="col-md-1">
             <button id="next" class="btn btn-primary">Next</button>
+            <button id="done" class="btn btn-primary" style="display:none">Done</button>
         </div>
     </div>
 </div>
@@ -99,18 +111,50 @@ of 1.5 when hovered*/
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/tomorrow_night");
     editor.session.setMode("ace/mode/css");
-    //when you need to do multiple levels of the game, use the multiple sessions thing to change the levels
-    //or use set value
+
+    var EditSession = require("ace/edit_session").EditSession;
+    var rotateLevel = new EditSession(["","/*Make the cloud and his friends rotate", "90 degrees when hovered*/", "#cloud {", "\twidth: 200px;", "\ttransition: all 0.4s ease;",
+       "}", "/*add code below*/", "#cloud:hover {", "", "}"]);
 
     $("#run").click(function () {
-        //if answer isnt undefined, then the correct answer is in the editor
-        var answer = editor.find('transform: scale(1.5)');
-        if (answer != undefined) {
-            $("#cloud").hover(function () {
-                $(this).toggleClass("hover");
-            });
+        //level 1
+        if (editor.getSession() != rotateLevel) {
+            //if answer isnt undefined, then the correct answer is in the editor
+            var answer = editor.find('transform: scale(1.5)');
+            if (answer != undefined) {
+                $("#cloud1").hover(function () {
+                    $(this).toggleClass("hover");
+                });
+                //show success alert
+                $("#woohoo").show();
+            }
+        }
+        //level 2
+        else {
+            var answer = editor.find('transform: rotate(90deg)');
+            if (answer != undefined) {
+                $("#cloud2").hover(function () {
+                    $(this).toggleClass("rotate");
+                });
+                //show success alert
+                $("#woohoo").show();
+                $("#next").hide();
+                $("#done").show();
 
-            $("#woohoo").show();
+            }
         }
     });
+
+    $("#next").click(function () {
+        //switch the clouds
+        $("#cloud1").hide();
+        $("#cloud2").show();
+        //change session instructions
+        editor.setSession(rotateLevel);
+        editor.session.setMode("ace/mode/css");
+        //hide success alert
+        $("#woohoo").hide();
+
+    });
+
 </script>
