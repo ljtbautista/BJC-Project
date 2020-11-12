@@ -1,0 +1,51 @@
+﻿body {
+    background-image: url('/Content/Home/blue tech background.png');
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 1000px;
+    padding-bottom: 15px;
+}
+
+#codeAnimation {
+    background-color: lightblue;
+    height: 450px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud {
+    width: 200px;
+    transition: all 0.4s ease;
+}
+
+/*scale for level 1*/
+#cloud1.hover {
+    transform: scale(1.5);
+}
+
+/*rotate for level 2*/
+#cloud2.rotate {
+    transform: rotate(90deg);
+}
+
+#editor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 15px;
+}
+
+.alert {
+    margin-bottom: 0;
+    padding: 0.375rem 0.75rem;
+}
+
+#done {
+    padding: 0.375rem 0.6rem;
+}
