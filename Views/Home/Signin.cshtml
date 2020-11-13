@@ -1,6 +1,56 @@
 ﻿@{
     ViewBag.Title = "Sign In";
 }
-<h2>@ViewBag.Title.</h2>
 
-<p>Use this area to provide additional information.</p>
+<head>
+    <style>
+        body {
+            background-image: url('../../Content/Home/blue tech background.png');
+        }
+
+        .body-content {
+            display: flex;
+            justify-content: center;
+        }
+
+        #signinBox {
+            background-color: white;
+            border-radius: 10px;
+            width: 450px;
+            margin-top: 130px;
+            padding: 10px 0;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-control {
+            display: initial;
+        }
+    </style>
+</head>
+
+<div class="container body-content">
+    <div id="signinBox">
+        <div class="center"><h3>Sign In</h3></div>
+        <hr />
+        <div class="center">
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <a href="#">Forgot Password</a>
+                <a href="@Url.Action("StudentProfile", "Home")" id="signin" type="submit" class="btn btn-primary" style="float: right;">
+                    Sign In
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

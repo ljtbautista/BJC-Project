@@ -1,7 +1,9 @@
-﻿using System;
+﻿using BJC_Project.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
 
 namespace BJC_Project.Controllers
@@ -10,17 +12,20 @@ namespace BJC_Project.Controllers
     {
         public ActionResult Homepage()
         {
-            return View();
+            SignIn si = new SignIn { IsSignedIn = true };
+            return View(si);
         }
 
         public ActionResult Signin()
         {
-            return View();
+            SignIn si = new SignIn { IsSignedIn = false };
+            return View(si);
         }
 
         public ActionResult StudentProfile()
         {
-            return View();
+            SignIn si = new SignIn { IsSignedIn = true };
+            return View(si);
         }
     }
 }
