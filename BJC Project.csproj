@@ -152,6 +152,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Home\algoritms.png" />
     <Content Include="Content\Home\anon.png" />
     <Content Include="Content\Home\badge_1.png" />
     <Content Include="Content\Home\badge_2.png" />
