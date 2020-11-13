@@ -1,6 +1,113 @@
 ﻿@{
     ViewBag.Title = "Programming";
 }
-<h2>@ViewBag.Title</h2>
 
-<p>Use this area to provide additional information.</p>
+<head>
+    <link href="~/Content/BigIdeas/Programming/programming.css" rel="stylesheet" />
+</head>
+
+<div class="banner">
+        <p class="bannerWords"><i class="fa fa-code"></i> PROGRAMMING <i class="fa fa-code"></i></p>
+</div>
+
+<div class="container body-content">
+    <h3>Courses</h3>
+    <div class="card-deck row">
+        <a class="card col-md-3" href="@Url.Action("Javascript", "BigIdeas")">
+            <img src="~/Content/BigIdeas/Programming/javascript.jpg" class="card-img-top">
+            <div class="card-info">
+                <h5>Javascript</h5>
+                <p>Learn the basics in Javascript</p>
+            </div>
+        </a>
+        <a class="card col-md-3" href="#">
+            <img src="~/Content/BigIdeas/Programming/hmtl.png" class="card-img-top">
+            <div class="card-info">
+                <h5>HTML</h5>
+                <p>Dive into the world of HTML and front end design</p>
+            </div>
+        </a>
+        <a class="card col-md-3" href="#">
+            <img src="~/Content/BigIdeas/Programming/csharp.jpg" class="card-img-top">
+            <div class="card-info">
+                <h5>C#</h5>
+                <p>Develop your first C# program</p>
+            </div>
+        </a>
+        <a class="card col-md-3" href="#">
+            <img src="~/Content/BigIdeas/Programming/python.png" class="card-img-top">
+            <div class="card-info">
+                <h5>Python</h5>
+                <p>Learn the basics in Python</p>
+            </div>
+        </a>
+    </div>
+
+    <br />
+
+    <h3>Videos</h3>
+    <div class="card-deck row">
+        <a class="card col-md-3" href="#">
+            <img src="~/Content/BigIdeas/Programming/Foundation of programming.png" class="card-img-top">
+            <div class="card-info">
+                <h5>Foundations of Programming</h5>
+                <p>12 min - Learn the basic building blocks</p>
+            </div>
+        </a>
+        <a class="card col-md-3" href="#">
+            <img src="~/Content/BigIdeas/Programming/lightbulb.jpg" class="card-img-top">
+            <div class="card-info">
+                <h5>Top 5 Tips for Coders</h5>
+                <p>6 min - 5 things every coder should know</p>
+            </div>
+        </a>
+        <a class="card col-md-3" href="#">
+            <img src="~/Content/BigIdeas/Programming/CSS.png" class="card-img-top">
+            <div class="card-info">
+                <h5>Intermediate CSS</h5>
+                <p>18 min - Push yourself to tackle these nifty CSS tricks</p>
+            </div>
+        </a>
+        <a class="card col-md-3" href="#">
+            <img src="~/Content/BigIdeas/Programming/OOP.jpg" class="card-img-top">
+            <div class="card-info">
+                <h5>Object Oriented Programming</h5>
+                <p>15 min - Beginner intro to OOP</p>
+            </div>
+        </a>
+    </div>
+
+    <br />
+
+    <h3>Test Yourself</h3>
+    <div class="card-deck row">
+        <a class="card col-md-3" href="#">
+            <img src="~/Content/BigIdeas/Programming/Jquery.png" class="card-img-top">
+            <div class="card-info">
+                <h5>JQuery Level 1 Test</h5>
+                <p>See what you know about JQuery</p>
+            </div>
+        </a>
+        <a class="card col-md-3" href="@Url.Action("JavascriptTest", "BigIdeas")">
+            <img src="~/Content/BigIdeas/Programming/Javascript Test.png" class="card-img-top">
+            <div class="card-info">
+                <h5>Javacript Level 1 Test</h5>
+                <p>Test your knowledge on basic javascript principles</p>
+            </div>
+        </a>
+        <a class="card col-md-3" href="#">
+            <img src="~/Content/BigIdeas/Programming/Cplusplus.png" class="card-img-top">
+            <div class="card-info">
+                <h5>C++ Level 3 Test</h5>
+                <p>Think you have what it takes to pass a level 3 test?</p>
+            </div>
+        </a>
+        <a class="card col-md-3" href="#">
+            <img src="~/Content/BigIdeas/Programming/HTML.png" class="card-img-top">
+            <div class="card-info">
+                <h5>HTML Level 2 Test</h5>
+                <p>Test your knowledge on more advanced HTML components</p>
+            </div>
+        </a>
+    </div>
+</div>
