@@ -1,0 +1,42 @@
+﻿body {
+    background-image: url('../../Home/blue tech background.png');
+}
+
+#quiz {
+    height: 600px;
+    margin-top: 40px;
+    padding-right: 0px;
+    overflow-y: scroll;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem !important;
+    padding: 50px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+
+.q {
+    padding-bottom: 20px;
+}
+
+.question {
+    font-size: 20px;
+}
+
+.answer {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+

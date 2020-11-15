@@ -127,6 +127,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\BigIdeas\JavascriptTest\JavascriptTest.css" />
+    <Content Include="Content\BigIdeas\JavascriptTest\JavaScriptTest.js" />
     <Content Include="Content\BigIdeas\Programming\Cplusplus.png" />
     <Content Include="Content\BigIdeas\Programming\csharp.jpg" />
     <Content Include="Content\BigIdeas\Programming\CSS.png" />
