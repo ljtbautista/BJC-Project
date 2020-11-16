@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model BJC_Project.Models.SignIn
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -22,14 +24,24 @@
             </div>
         </div>
         @*search bar*@
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="margin-right: 20px !important;">
-            @*at some point this link will need to become "sign out"*@
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="margin-right: 20px !important;">
+        @*if the user is logged in, show their profile pic and "logout"*@
+        @if (Model.IsSignedIn == false)
+        {
             <a href="@Url.Action("Signin", "Home")" style="color: #0C2340; text-decoration:none;">Sign In</a>
             <a href="@Url.Action("StudentProfile", "Home")">
                 <img src="~/Content/Home/anon.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy" style="margin-left: 5px;">
             </a>
-        </form>
+        }
+        else
+        {
+            <a href="#" style="color: #0C2340; text-decoration:none;">Logout</a>
+            <a href="@Url.Action("StudentProfile", "Home")">
+                <img src="~/Content/Home/phil_knight.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy" style="margin-left: 5px; border-radius: 50px;">
+            </a>
+        }
+    </form>
     </nav>
     @*<div class="container body-content">*@
         @RenderBody()
