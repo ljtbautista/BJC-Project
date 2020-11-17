@@ -22,6 +22,11 @@ namespace BJC_Project.Controllers
             return View(si);
         }
 
+        public ActionResult CSS()
+        {
+            return View(si);
+        }
+
         //Lesson
         public ActionResult JavascriptTest()
         {

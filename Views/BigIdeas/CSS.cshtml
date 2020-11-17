@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Javascript";
+    ViewBag.Title = "CSS";
 }
 
 <head>
@@ -9,17 +9,17 @@
 <div class="container body-content">
     <div class="row" style="padding-bottom: 10px">
         <div class="col-md-5 centerContent">
-            <img id="coursePic" src="~/Content/BigIdeas/Programming/javascript.jpg" />
+            <img id="coursePic" src="~/Content/BigIdeas/Programming/CSS.png" />
         </div>
         <div class="col-md-7">
-            <h1>Javascript - 50% Completed</h1>
-            <h2 class="h3">5 hours - 6 Modules</h2>
+            <h1>CSS - 75% Completed</h1>
+            <h2 class="h3">6 hours - 8 Modules</h2>
             <img id="stars" src="~/Content/BigIdeas/Programming/JavascriptCourse/stars.png" />
             <p>
-                everywhere meow miao french ciao litterbox hell is other people scratch the furniture, 
-                somehow manage to catch a bird but have no idea what to do next, so play with it until it dies of shock.
+                Cough nyaa nyaa so touch water with paw then recoil in horror for furrier and even more
+                furrier hairball. Adventure always hide at bottom of staircase to trip human demand to be let outside at
             </p>
-            <a href="@Url.Action("JavascriptTest", "BigIdeas")" type="button" class="btn btn-dark">Continue <i class="fa fa-arrow-right"></i></a>
+            <a href="@Url.Action("InteractiveGame", "BigIdeas")" type="button" class="btn btn-dark">Continue <i class="fa fa-arrow-right"></i></a>
             <a id="overview" data-toggle="collapse" href="#collapseOverview" role="button" aria-expanded="false" aria-controls="collapseOverview">
                 Overview <i class="fa fa-angle-up caret"></i>
             </a>
@@ -32,19 +32,23 @@
                     <ul class="progressBar">
                         <li></li>
                         <li></li>
-                        <li class="active"></li>
                         <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="active"></li>
                         <li></li>
                         <li></li>
                     </ul>
 
                     <ul class="progressText">
-                        <li><a href="#">Lesson 1: This is the first lesson on Javascript</a></li>
-                        <li><a href="#">Lesson 2: This is the second lesson on Javascript</a></li>
-                        <li class="active"><a href="@Url.Action("JavascriptTest", "BigIdeas")">Test 1: This is the first test on Javascript</a></li>
-                        <li>Lesson 4: This is the third lesson on Javascript</li>
-                        <li>Lesson 5: This is the fourth lesson on Javascript</li>
-                        <li>Lesson 6: This is the fifth lesson on Javascript</li>
+                        <li><a href="#">Lesson 1: This is the first lesson on CSS</a></li>
+                        <li><a href="#">Lesson 2: This is the second lesson on CSS</a></li>
+                        <li><a href="#">Test 1: This is the first test on CSS</a></li>
+                        <li><a href="#">Lesson 3: This is the third lesson on CSS</a></li>
+                        <li><a href="#">Lesson 4: This is the fourth lesson on CSS</a></li>
+                        <li class="active"><a href="@Url.Action("InteractiveGame", "BigIdeas")">Interactive Game: Meet Kevin and his friends!</a></li>
+                        <li>Lesson 5: This is the fifth lesson on CSS</li>
+                        <li>Lesson 6: This is the sixth lesson on CSS</li>
                     </ul>
                 </div>
             </div>

@@ -304,6 +304,7 @@
     <Content Include="Views\BigIdeas\Javascript.cshtml" />
     <Content Include="Views\BigIdeas\JavascriptTest.cshtml" />
     <Content Include="Views\BigIdeas\InteractiveGame.cshtml" />
+    <Content Include="Views\BigIdeas\CSS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

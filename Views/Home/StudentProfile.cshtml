@@ -1,4 +1,8 @@
-﻿<link href="~/Content/Home/StudentProfile.css" rel="stylesheet" />
+﻿@{
+    ViewBag.Title = "Profile";
+}
+
+<link href="~/Content/Home/StudentProfile.css" rel="stylesheet" />
 
 <div class="container">
     <div class="row">
@@ -13,7 +17,7 @@
                             <div class="col-md-8">
                                 <div class="card-body" style="padding: 2.5rem;">
                                     <h5 class="card-title">Phil Knight</h5>
-                                    <p class="card-text">pdknight@email.email</p>
+                                    <p class="card-text">pdknight@gmail.com</p>
                                     <p class="card-text">10th Grade</p>
                                 </div>
                             </div>
@@ -65,13 +69,15 @@
             <div class="card mb-3" style="max-width: 600px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="~/Content/Home/programming-languages-learn-header-image.jpg" class="card-img" style="height: 140px;">
+                        <img src="~/Content/BigIdeas/Programming/javascript.jpg" class="card-img" style="height: 140px;">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Programming Lesson 1</h5>
-                            <p class="card-text">-------------------------------------------------</p>
-                            <p class="card-text">48% Complete</p>
+                            <a href="@Url.Action("Javascript","BigIdeas")">
+                                <h5 class="card-title">Javascript</h5>
+                                <p class="card-text">-------------------------------------------------</p>
+                                <p class="card-text">50% Complete</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -93,13 +99,15 @@
             <div class="card mb-3" style="max-width: 600px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="~/Content/Home/internet-of-things-1.jpg" class="card-img" style="height: 140px;">
+                        <img src="~/Content/BigIdeas/Programming/CSS.png" class="card-img" style="height: 140px;">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Internet Lesson 3</h5>
-                            <p class="card-text">-------------------------------------------------</p>
-                            <p class="card-text">20% Complete</p>
+                            <a href="@Url.Action("CSS","BigIdeas")">
+                                <h5 class="card-title">CSS</h5>
+                                <p class="card-text">-------------------------------------------------</p>
+                                <p class="card-text">75% Complete</p>
+                            </a>
                         </div>
                     </div>
                 </div>
